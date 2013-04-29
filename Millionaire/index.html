@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title> Millionaire</title>
+        <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+        <link rel="stylesheet" href="default.css">
+
+        <style type="text/css">
+
+        html, body{
+            width: 55%;
+            height: 50%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #mainBox{
+            width: 90%;
+            margin: 0px auto 100px;
+            border-radius: 15px;
+        }
+
+        #book{
+            width: 500px;
+            height: 700px;
+            text-align: center; 
+            margin: 0px auto;
+        }
+        
+        .page{
+            background: #ccc;
+            border-radius: 15px;
+        }
+        
+        .page p{
+            color: #111;
+            font-size: 1.2em;
+        }
+        .title{
+            font-size: 2em;
+            padding: 0 0 0 20px;
+            text-align: left;
+            color: #990CA6;
+        }
+
+        button{
+            padding: 20px;
+            width: 85%;
+            background: #3697FF;
+            color: #fff;
+            border-radius: 5px;
+            border: #3697FF 1px solid;
+            font-size: 2em;
+            float: left;
+            margin-left: 40px;
+        }
+
+        button:hover{
+            background: #106BCC;
+            color: #fff;
+            border: #3697FF 1px solid;
+        }
+
+        .halfPage{
+            width: 50%;
+            float: left;
+            margin: 0px;
+        }
+
+        .halfPage h1{
+            color: #111;
+        }
+
+        </style>
+
+        <script type="text/javascript">
+
+        var _score = 0;
+
+        </script>
+    </head>
+    <body>
+        
+        <div id="mainBox">
+
+            <div class="header">
+                
+             <h1 style="color: #fff; text-align: center;font-size: 3em " >   Millionaires</h1>
+            </div>
+
+            <div id="book">
+                <div class="page">
+                    <div style="width: 100%; height: 100%; background: url(pat.jpg); margin-top: -45px; border-radius: 15px;">
+                        <h1 style="color: #fff; text-align: center; font-size: 6em; padding-top: 40px; color:#FF0000  ;">World  10 Richest People </h1>
+                        <h1 style="color: #fff; text-align: center; margin: -20px 0 0 20px; color: #0000FF;">Play The Game and Identifiny These Millionaires</h1>
+                        <button style="margin-top: 350px;" onclick="mybook.nxtPage()">PLAY!</button>
+                    </div>
+                </div>
+                <div class="page">
+                    <h1 class="title">Question 1</h1>
+                    <img src="1.jpg" style="width: 200px;" />
+                    <h3><li>Net Worth: $69 billion</li>
+                   
+					<li>2010 Rank: #1 </li>
+					<li>Residence: Mexico City, Mexico</li>
+					<li>Industry: Communications</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1;">Carlos Slim Helu</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();">Rasgol david</button>
+                </div>
+                <div class="page">
+                    <h1 class="title">Question 2</h1>
+                    <img src="2.png" style="width: 500px;" />
+                    <h3><li>Net Worth: $61 billion</li>
+                   
+					<li>2010 Rank: #2 </li>
+					<li>Residence:  Medina, Washington, USA</li>
+					<li>Industry: Software</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+                    <button style="padding: 10px; font-size: 1.5em;" onclick="mybook.nxtPage(); _score+=1;"> William Gates III</button>
+                    <button style="padding: 10px; font-size: 1.5em;" onclick="mybook.nxtPage();">George Bush</button>
+                </div>
+                <div class="page">
+                    <h1 class="title">Question 3</h1>
+                    <img src="3.png" style="width:500px;" />
+                     
+					 <h3><li>Net Worth:$44 billion</li>
+                   
+					<li>2010 Rank: #3</li>
+					<li>Residence: Omaha, Nebraska, USA</li>
+					<li>Industry:  Investments</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+					 
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();">Charles hears</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1;">Warren Buffett</button>
+                </div>
+                <div class="page">
+                    <h1 class="title">Question 4</h1>
+                    <img src="4.png" style="width:350px;" />
+                    
+					 <h3><li>Net Worth: $41 billion </li>
+                   
+					<li>2010 Rank: #4 </li>
+					<li>Residence: Paris, France</li>
+					<li>Industry: Louis Vuitton Moet Hennessy (LVMH) </li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+					
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();">Ortega Ellison</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1;">Bernard Arnault</button>
+                </div>
+                <div class="page">
+                    <h1 class="title">Question 5</h1>
+                    <img src="5.png" style="width:500px;" />
+                   
+				   
+				    <h3><li>Net Worth:  $37.5 billion </li>
+                   
+					<li>2010 Rank: #7 </li>
+					<li>Residence:  La Coruna, Spain</li>
+					<li>Industry:  Zara</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+					 
+					 
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1; tallyScore()">Amancio Ortega</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); tallyScore()">Eike Buffet</button>
+                </div>
+               
+
+			<div class="page">
+                    <h1 class="title">Question 6</h1>
+                    <img src="6.png" style="width:400px;" />
+                    <h3><li>Net Worth: $36 billion</li>
+                   
+					<li>2010 Rank: #5 </li>
+					<li>Residence: Woodside, California, USA</li>
+					<li>Industry: Oracle</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();">Rasgon david</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1;">Larry Ellison</button>
+                </div>
+
+				
+				<div class="page">
+                    <h1 class="title">Question 7</h1>
+                    <img src="7.png" style="width:500px;" />
+                    <h3><li>Net Worth:  $30 billion</li>
+                   
+					<li>2010 Rank:  #8	 </li>
+					<li>Residence:  Rio de Janeiro, Brazil</li>
+					<li>Industry: Mining, Oil</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1;">Eike Batista</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();">Rasgol david</button>
+                </div>
+				
+				<div class="page">
+                    <h1 class="title">Question 8</h1>
+                    <img src="8.png" style="width:500px;" />
+                    <h3><li>Net Worth: $26 billion</li>
+                   
+					<li>2010 Rank: #13 </li>
+					<li>Residence:   Stockholm, Swedenl</li>
+					<li>Industry:  H&M</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1;"> Stefan Persson</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();">Man Mohan Singh</button>
+                </div>
+				
+				<div class="page">
+                    <h1 class="title">Question 9</h1>
+                    <img src="9.png" style="width:500px;" />
+                    <h3><li>Net Worth: $25.6 billion</li>
+                   
+					<li>2010 Rank: #11 </li>
+					<li>Residence:  Hong Kong</li>
+					<li>Industry:  Hutchison Whampoa Limited</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); _score+=1;">Li Ka-shing</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();">Hi Chi-ring</button>
+                </div>
+				
+				<div class="page">
+                    <h1 class="title">Question 10</h1>
+                    <img src="10.png" style="width:500px;" />
+                    <h3><li>Net Worth: $25.4 billion</li>
+                   
+					<li>2010 Rank: #12 </li>
+					<li>Residence: Germany</li>
+					<li>Industry: Aldi Supermarkets</li>
+					 </h3><h2><br><p>Who is this?</p></br></h2>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage(); ">Carlos Slim Helu</button>
+                    <button style="padding: 10px;" onclick="mybook.nxtPage();_score+=1;">Karl Albrecht</button>
+                </div>
+				
+				
+
+
+			   <div class="page">
+                    <h1 class="title">A Score!</h1>
+                    <p>What is your score!</p> 
+                    <p>Please be patient we do implore!</p>
+                    <div style="width: 100%;">
+                        <div class="halfPage">
+                            <h1>YOUR SCORE:</h1>
+                            <h1 id="scoreBox" style="font-size: 6em;"></h1>
+                        </div>
+                        <div class="halfPage">
+                            <img src="11.png" style="width: 250px;" />
+                        </div>
+                    </div>
+                    <button style="margin-top: 200px;" onclick="mybook.nxtPage(); resetScore();">Play Again!</button>
+                </div>
+            </div>
+            
+        </div>
+
+       
+
+        <!-- Feature Sniffer -->
+        <script type="text/javascript" src="sniffer.js"></script>
+
+        <!-- AliceJS -->
+        <script src="alice.min.js"></script>
+		<script src="alice.js"></script>
+
+        <script type="text/javascript">
+
+        function tallyScore() {
+            document.getElementById("scoreBox").innerHTML = _score + '/10';
+        }
+
+        function resetScore() {
+            _score=0;
+        }
+
+        var mybook = alicejs.notebook({
+            elems: "book",
+            speed: 1000,
+            binding: "left",
+            randomize: '5%',
+            pageBackground: '#555',
+            wrap: true
+        });
+
+         
+        </script>
+    </body>
+</html>
